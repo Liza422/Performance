@@ -103,7 +103,7 @@ int main() {
     thread update_values([] () {
         while (running && enabled) {
             snprintf(cpubuff, size(cpubuff), "CPU: %d%%", (int)roundf(GetCPUUsage()));
-            snprintf(rambuff, size(cpubuff), "RAM: %d%%", (int)roundf(GetRAMUsage()));
+            snprintf(rambuff, size(rambuff), "RAM: %d%%", (int)roundf(GetRAMUsage()));
 
             ULARGE_INTEGER free, total, freetotal;
             GetDiskFreeSpaceEx(NULL, &free, &total, &freetotal);
