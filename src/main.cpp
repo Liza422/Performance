@@ -72,7 +72,7 @@ int main() {
     glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
     GLFWwindow* win = glfwCreateWindow(300, 400, "Performance", NULL, NULL);
     if (!win) {
-        cout << "Window err :(" << endl;
+        cout << "Window err >:d" << endl;
         glfwTerminate();
         return -1;
     }
